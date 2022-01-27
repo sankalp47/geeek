@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String args[]) {
+        //your code here
+        Scanner sc = new Scanner(System.in);
+        int n,arm;
+        int i = 100;
+        while(i<1000){
+            n = i;
+            arm = 0;
+            while(n>0){
+                int r = n % 10;
+                arm = arm + (r*r*r);
+                n = n/10;
+            }
+        if(arm == i){
+            System.out.println(i);
+        }
+        i++;
+        }
+    }    
+}
